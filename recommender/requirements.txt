@@ -6,3 +6,6 @@ faiss-cpu
 pillow
 accelerate
 langchain-ollama
+langchain-community
+sentence-transformers
+langchain-huggingface
