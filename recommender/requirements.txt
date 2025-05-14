@@ -1,0 +1,8 @@
+pydantic
+langchain
+transformers
+torch
+faiss-cpu
+pillow
+accelerate
+langchain-ollama
