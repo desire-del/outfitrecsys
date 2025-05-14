@@ -1,42 +1,42 @@
 [
   {
     "id": "item001",
-    "image": "images/image1.png",
+    "image": "data/images/image1.png",
     "type": "shirt",
     "color": "green",
     "material": "cotton"
   },
   {
     "id": "item002",
-    "image": "images/image2.png",
+    "image": "data/images/image2.png",
     "type": "shirt",
     "color": "yellow",
     "material": "cotton"
   },
   {
     "id": "item003",
-    "image": "images/image3.jpg",
+    "image": "data/images/image3.png",
     "type": "shirt",
     "color": "orange",
     "material": "cotton"
   },
   {
     "id": "item004",
-    "image": "images/image4.jpg",
+    "image": "data/images/image4.png",
     "type": "bottom",
     "color": "brown",
     "material": "cotton"
   },
   {
     "id": "item005",
-    "image": "images/image5.jpg",
+    "image": "data/images/image5.png",
     "type": "bottom",
     "color": "blue",
     "material": "polyester"
   },
   {
     "id": "item006",
-    "imagei": "images/image6.jpg",
+    "image": "data/images/image6.png",
     "type": "one-piece",
     "color": "blue",
     "material": "wool"

@@ -1,11 +1,9 @@
-from src.base.imagedescriber import BLIP2Describer, LlavaOllamaDescriber
+from src.vectorstore.vectorstor import WardrobeVectorStore
 
-image_path="data/images/image1.png"
-prompt = """You are a fashion assistant. Look at the image and describe the outfit in detail.
- Mention the type of clothing, color, material, and style (e.g. casual, formal, sporty).
-   Also suggest occasions where it can be worn (e.g. office, beach, party).
-     Keep the description under 50 words and use fashion vocabulary."""
+store = WardrobeVectorStore("data/data.json", "vectorstore/faiss_index")
 
-descp = LlavaOllamaDescriber()
-print(descp.describe(image_path, prompt))
+#store.create_vectorstore()
 
+store.load_vectorstore(allow_dangerous_deserialization=True)
+
+print(store.vectorstore.similarity_search("a yellow t-shirt"))
