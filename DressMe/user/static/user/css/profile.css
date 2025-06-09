@@ -1,0 +1,79 @@
+.step {
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-bottom: 3px solid #ccc;
+}
+.step.active {
+    color: #d9b455;
+    border-color: #ca9d2b;
+}
+.step-content { 
+    display: none; 
+}
+.step-content.active { 
+    display: block; 
+}
+
+.next-step {
+    background-color: #d9b455;
+}
+
+.next-step:hover {
+    background-color: #ca9d2b;
+}
+
+.form-control:focus {
+    border-color: #d9b455;
+    box-shadow: 0 0 0 0.2rem rgba(217, 180, 85, 0.25);
+}
+
+.form-select:focus {
+    border-color: #d9b455;
+    box-shadow: 0 0 0 0.2rem rgba(217, 180, 85, 0.25);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(217, 180, 85, 0.4);
+}
+
+textarea {
+    resize: none;
+    height: 40px;
+}
+
+.choices__inner {
+    background-color: #fff;
+    color: #d9b455;
+    border-radius: 4px;
+}
+
+.choices.is-focused .choices__inner {
+    border: 1px solid #d9b455;
+    box-shadow: 0 0 0 0.2rem rgba(217, 180, 85, 0.25);
+}
+
+/* Option highlight on hover */
+.choices__item--selectable.is-highlighted {
+    background-color: #f7efd2;
+    color: #d9b455;
+}
+
+/* Selected item text color */
+.choices__item--selectable {
+    color: #333;
+}
+
+/* If you're using multi-select tags */
+.choices__list--multiple .choices__item {
+    background-color: #d9b455;
+    color: #fff;
+    border: none;
+}
+
+/* Remove default blue outline on focus */
+.choices[data-type*="select-one"] .choices__inner:focus {
+    box-shadow: 0 0 0 2px rgba(217, 180, 85, 0.25);
+}

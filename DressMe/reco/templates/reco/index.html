@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Client</title>
+        <link rel="stylesheet" href="{% static 'reco/css/index.css' %}">
+    </head>
+    <body>
+        <div class="overlay" id="overlay"></div>
+        <nav id="side-menu" class="side-menu">
+            <div class="burger">☰</div>
+            <ul>
+                <li><a href="{% url 'Home' %}">Home</a></li>
+                <li><a href="#">Recommendation</a></li>
+                <li><a href="#">MyOutfits</a></li>
+                <li><a href="#">Upload</a></li>
+                <li><a href="#">MyAccount</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="item">
+                <div class="menu-toggle" id="menu-toggle">☰</div>
+                <button id="create-outfit" disabled>Create New Outfit</button>
+            </div>
+            <div class="item">
+                <div class="sidebar-header">
+                    <button id="add-element">Add New Item</button>
+                </div>
+                <div class="element-list" id="element-list">
+                    <img class="element" src="{% static 'reco/images/logo.png' %}" alt="">
+                    <img class="element" src="{% static 'reco/images/logo.png' %}" alt="">
+                    <img class="element" src="{% static 'reco/images/logo.png' %}" alt="">
+                    <img class="element" src="{% static 'reco/images/logo.png' %}" alt="">
+                    <img class="element" src="{% static 'reco/images/logo.png' %}" alt="">
+                    <img class="element" src="{% static 'reco/images/logo.png' %}" alt="">
+                    <img class="element" src="{% static 'reco/images/logo.png' %}" alt="">
+                    <img class="element" src="{% static 'reco/images/logo.png' %}" alt="">
+                    <img class="element" src="{% static 'reco/images/logo.png' %}" alt="">
+                    <img class="element" src="{% static 'reco/images/logo.png' %}" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <img class="watermark" src="{% static 'reco/images/logo.png' %}" alt="watermark" />
+            </div>
+        </div>
+        <script src="{% static 'reco/css/index.css' %}"></script>
+    </body>
+</html>

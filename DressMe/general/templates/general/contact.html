@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DressMe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'general/css/contact.css' %}">
+    <link rel="icon" href="{% static 'general/images/logo.jpeg' %}" type="image/png">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>DressMe</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="{% url 'Home' %}" class="link active">Home</a></li>
+                    <li><a href="{% url 'About' %}" class="link">About</a></li>
+                    <li><a href="#" class="link">Link</a></li>
+                    <li><a href="{% url 'Contact' %}" class="link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn"><a href="{% url 'Sign' %}">Sign In/Up</a></button>
+            </div>
+        </nav>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>We're glad to hear from you! Whether you have a question, feedback, or just want to say hello <br>
+                    we’re all ears.</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>4671 Sugar Camp Road, <br>Owatonna,Minnesto,<br>55060</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+212770883391</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>yassiraamoud1@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form action="">
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required />
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required />
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required name="" id=""></textarea>
+                            <span>Type your message ...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Send" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

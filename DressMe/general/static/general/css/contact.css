@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display:ital,wght@0,500;1,500&family=Raleway:wght@400;500&display=swap');
+
+:root {
+    --main-color: #d9b455;
+    --alt-color: #ca9d2b;
+    --main-color-2 : #f7f7f7;
+    --main-transition: 0.3s;
+    --section-padding: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background: url("../images/sign.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
+}
+
+.wrapper .nav {
+    font-family: 'Cinzel', serif;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+
+.wrapper .nav .nav-logo p {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.wrapper .nav .nav-menu ul {
+    display: flex;
+}
+
+.wrapper .nav .nav-menu ul li {
+    list-style-type: none;
+}
+
+.wrapper .nav .nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.wrapper .nav .nav-menu ul li .link:hover, .active {
+    border-bottom: 2px solid #fff;
+}
+
+.wrapper .nav .nav-button .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.wrapper .nav .nav-button .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.wrapper .nav .nav-button .btn.white-btn {
+    background: rgba(212, 175, 55, 0.7);
+}
+
+.wrapper .nav .nav-button .btn.btn.white-btn:hover {
+    background: rgba(212, 175, 55, 0.5);
+}
+
+.wrapper .contact {
+    font-family: 'Cinzel', serif;
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.wrapper .contact .content {
+    width: 100%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.wrapper .contact .content h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+
+.wrapper .contact .content p {
+    font-weight: 300;
+    color: white;
+}
+
+.wrapper .contact .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.wrapper .contact .container .contactInfo {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    right: 100px;
+}
+
+.wrapper .contact  .container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.wrapper .contact .container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: background-color var(--main-transition);
+}
+
+.wrapper .contact .container .contactInfo .box .icon:hover {
+    background-color: #ca9d2b;
+}
+
+.wrapper .contact .container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.wrapper .contact .container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.wrapper .contact .container .contactForm {
+    position: relative;
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    left: 130px;
+}
+
+.wrapper .contact .container .contactForm form h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.wrapper .contact .container .contactForm form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.wrapper .contact .container .contactForm form .inputBox input,  
+.wrapper .contact .container .contactForm form .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.wrapper .contact .container .contactForm form .inputBox input span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: all 0.5s;
+    color: #666;
+}
+
+.wrapper .contact .container .contactForm form .inputBox input:focus ~ span,
+.wrapper .contact .container .contactForm form .inputBox input:valid ~ span, 
+.wrapper .contact .container .contactForm form .inputBox textarea:focus ~ span,
+.wrapper .contact .container .contactForm form .inputBox textarea:valid ~ span {
+    color: var(--alt-color);
+    transform: translateY(-20px);
+}
+
+.wrapper .contact .container .contactForm form .inputBox input[type="submit"] {
+    width: 100px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
